@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif;
+  --main-black: "#151515";
+  --main-orange: "#f8a145";
+  --secondary-orange: "#FDA769";
+  --creamy: "#FFF4E0";
+  --lightning-yellow: "#fcc01e";
+  --main-grey: "#716e6e";
+}
+
+body {
+  background: #fff;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #151515;
+  right: 0;
+  bottom: -10px;
+  color: #151515;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.card {
+  background-color: #f0eeec;
+}
+
+.hamburger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger:focus {
+  outline: none;
+}
